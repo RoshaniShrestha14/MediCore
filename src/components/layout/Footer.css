@@ -1,0 +1,107 @@
+.footer {
+  background: #0f1729;
+  padding: 60px 0 30px;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  padding: 0 32px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.highlight {
+  color: #3b82f6;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 16px 0;
+  max-width: 360px;
+  color: #cbd5e1;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.icon-box {
+  width: 40px;
+  height: 40px;
+  background: #1e293b;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.footer-links h4,
+.footer-services h4,
+.footer-contact h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.footer-links ul,
+.footer-services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-services li {
+  margin-bottom: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #cbd5e1;
+}
+
+.footer-contact .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+.contact-icon {
+  width: 36px;
+  height: 36px;
+  background: #1e293b;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-bottom {
+  border-top: 1px solid #334155;
+  margin-top: 40px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.bottom-links span {
+  margin-left: 50px;
+  cursor: pointer;
+}

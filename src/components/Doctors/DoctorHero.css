@@ -1,0 +1,79 @@
+.doctor-hero {
+  position: relative;
+  min-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+  background-image: linear-gradient(
+      rgba(248, 244, 238, 0.85),
+      rgba(248, 244, 238, 0.85)
+    ),
+    url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3');
+  background-size: cover;
+  background-position: center;
+}
+
+.doctor-hero-content {
+  max-width: 850px;
+  width: 100%;
+}
+
+.doctor-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-top: 0;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #5b6472;
+  margin: 0 0 2px 0;
+}
+
+.subtitle {
+  max-width: 600px;
+  font-size: 17px;
+  color: #5b6472;
+  line-height: 1.7;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .doctor-hero h1 {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .doctor-hero {
+    min-height: 420px;
+    padding: 60px 20px;
+  }
+
+  .doctor-hero h1 {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .doctor-hero h1 {
+    font-size: 26px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+}
