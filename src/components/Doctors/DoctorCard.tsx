@@ -3,8 +3,6 @@ import {
   Star,
   Globe,
   BriefcaseMedical,
-  Phone,
-  Calendar
 } from "lucide-react";
 import "./DoctorCard.css";
 
@@ -43,23 +41,23 @@ const DoctorCard: React.FC<Props> = ({ doctor }) => {
 
         <div className="info">
           <div>
-            <BriefcaseMedical size={16} />
+            <BriefcaseMedical size={16} stroke="#238ce8" />
             <span>{doctor.experience}</span>
           </div>
           <div>
-            <Globe size={16} />
+            <Globe size={16} stroke="#238ce8" />
             <span>{doctor.languages}</span>
           </div>
         </div>
 
-        <div className="card-buttons">
+        {/* <div className="card-buttons">
           <button className="outline">
             <Phone size={16} /> Call
           </button>
           <button className="primary">
             <Calendar size={16} /> Book
-          </button>
-        </div>
+          </button> */}
+        {/* </div> */}
       </div>
     </div>
   );

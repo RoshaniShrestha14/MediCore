@@ -52,6 +52,7 @@
   margin: 0 auto;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 .search-box:focus-within {
@@ -67,6 +68,8 @@
   border: none;
   outline: none;
   width: 100%;
+  flex: 1;
+  min-width: 0;
   font-size: 15px;
   color: #333;
   background: transparent;
@@ -118,5 +121,10 @@
 
   .search-box {
     border-radius: 12px;
+    padding: 10px 12px;
+  }
+
+  .search-box input {
+    font-size: 14px;
   }
 }

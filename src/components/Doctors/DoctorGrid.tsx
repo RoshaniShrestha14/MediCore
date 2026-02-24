@@ -1,45 +1,8 @@
 import React, { useState } from "react";
 import DoctorCard from "./DoctorCard";
 import "./DoctorGrid.css";
+import { doctorsData } from "./doctorsData";
 
-const doctorsData = [
-  {
-    name: "Dr. Marcus Thorne",
-    role: "Senior Cardiologist",
-    degree: "MBBS, MD - Cardiology, FACC",
-    rating: 4.9,
-    experience: "12+ Years Experience",
-    languages: "English, Spanish",
-    image: "https://i.pravatar.cc/300?img=11"
-  },
-  {
-    name: "Dr. Sarah Jenkins",
-    role: "Pediatrics Specialist",
-    degree: "MBBS, DCH, MD - Pediatrics",
-    rating: 5.0,
-    experience: "8 Years Experience",
-    languages: "English, French",
-    image: "https://i.pravatar.cc/300?img=47"
-  },
-  {
-    name: "Dr. Alan Varga",
-    role: "Neurologist",
-    degree: "MBBS, MS, DM - Neurology",
-    rating: 4.8,
-    experience: "15+ Years Experience",
-    languages: "English, German",
-    image: "https://i.pravatar.cc/300?img=32"
-  },
-  {
-    name: "Dr. Elena Rodriguez",
-    role: "Dermatology Head",
-    degree: "MBBS, MD - Dermatology",
-    rating: 4.7,
-    experience: "10 Years Experience",
-    languages: "Spanish, English",
-    image: "https://i.pravatar.cc/300?img=5"
-  }
-];
 
 const itemsPerPage = 4;
 

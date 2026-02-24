@@ -1,8 +1,25 @@
 import React from "react"; 
 import "./Footer.css";
 import { Facebook, Instagram, Phone, Mail, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
+  const quickLinks = [
+    { label: "Book Appointment", to: "/appointment" },
+    { label: "Find a Specialist", to: "/doctor" },
+    { label: "Virtual Care", to: "/services" },
+    { label: "Health Library", to: "/about" },
+    { label: "Bill Pay", to: "/appointment" },
+  ];
+
+  const serviceLinks = [
+    { label: "Cardiology", to: "/services" },
+    { label: "Neurology", to: "/services" },
+    { label: "Pediatrics", to: "/services" },
+    { label: "Orthopedics", to: "/services" },
+    { label: "Oncology", to: "/services" },
+  ];
+
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -24,22 +41,26 @@ const Footer: React.FC = () => {
         <div className="footer-links">
           <h4>Quick Links</h4>
           <ul>
-            <li>Book Appointment</li>
-            <li>Find a Specialist</li>
-            <li>Virtual Care</li>
-            <li>Health Library</li>
-            <li>Bill Pay</li>
+            {quickLinks.map((link) => (
+              <li key={link.label}>
+                <Link to={link.to} className="footer-nav-link">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
         <div className="footer-services">
           <h4>Our Services</h4>
           <ul>
-            <li>Cardiology</li>
-            <li>Neurology</li>
-            <li>Pediatrics</li>
-            <li>Orthopedics</li>
-            <li>Oncology</li>
+            {serviceLinks.map((service) => (
+              <li key={service.label}>
+                <Link to={service.to} className="footer-nav-link">
+                  {service.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 

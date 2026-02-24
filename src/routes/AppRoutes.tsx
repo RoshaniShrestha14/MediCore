@@ -1,14 +1,13 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Layout from "../components/layout/Layout";
-import Service from "../pages/Services";
+import About from "../pages/About";
+import Services from "../pages/Services";
 import Doctor from "../pages/Doctor";
-// import AboutUs from "../pages/AboutUs";
-// import Contact from "../pages/Contact";
 import NotFound from "../components/ui/NotFound";
 import { ScrollToTop } from "./ScrollToTop";
-// import RegisterPage from "../components/Auth/RegisterPage";
-// import LoginPage from "../components/Auth/LoginPage";
 import Home from "../pages/Home";
+import BookAppointment from "../pages/BookAppointment";
+
 
 
 export default function AppRoutes() {
@@ -19,12 +18,10 @@ export default function AppRoutes() {
       <Routes>
         <Route element={<Layout />}>
              <Route path="/" element={<Home/>} />
-            {/* <Route path="/about" element={<AboutUs />} /> */}
-            <Route path="/services" element={<Service />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
             <Route path="/doctor" element={<Doctor />} />
-            {/* <Route path="/contact" element={<Contact />} />
-            <Route path="/register" element={<RegisterPage />} />
-               <Route path="/login" element={<LoginPage />} />  */}
+            <Route path="/appointment" element={<BookAppointment />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />
