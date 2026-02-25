@@ -1,11 +1,16 @@
-// import React from 'react'
+import Hero from "../components/Home/Hero";
+import WhyChoose from "../components/Home/WhyChoose";
+import Testimonials from "../components/Home/Testimonials";
 
-const Home = () => {
+
+function App() {
   return (
-    <div>
-      hi
+    <div className="hf-app">
+      <Hero />
+      <WhyChoose />
+      <Testimonials />
     </div>
-  )
+  );
 }
 
-export default Home
+export default App;
