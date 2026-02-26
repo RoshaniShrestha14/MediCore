@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Footer: React.FC = () => {
   const quickLinks = [
     { label: "Book Appointment", to: "/appointment" },
-    { label: "Find a Specialist", to: "/doctor" },
+    { label: "Find a Specialist", to: "/doctor#doctor-list" },
     { label: "Virtual Care", to: "/services" },
     { label: "Health Library", to: "/about" },
     { label: "Bill Pay", to: "/appointment" },

@@ -22,7 +22,7 @@ const DoctorGrid: React.FC = () => {
   );
 
   return (
-    <section className="doctor-grid-section">
+    <section className="doctor-grid-section" data-scroll="doctor-list">
       <div className="top-bar">
         <p className="doctor-count">Showing <strong>{sortedDoctors.length}</strong> Expert Doctors</p>
 

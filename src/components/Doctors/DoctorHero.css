@@ -55,7 +55,7 @@
 
 @media (max-width: 768px) {
   .doctor-hero {
-    min-height: 420px;
+    min-height: 300px;
     padding: 60px 20px;
   }
 

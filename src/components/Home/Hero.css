@@ -27,6 +27,42 @@
   margin-top: 0;
 }
 
+.healthcare-badge,
+.healthcare-hero h1,
+.healthcare-hero p,
+.healthcare-hero-buttons {
+  opacity: 0;
+  transform: translateX(-26px);
+  animation: heroSlideInLeft 0.7s ease-out forwards;
+}
+
+.healthcare-badge {
+  animation-delay: 0.08s;
+}
+
+.healthcare-hero h1 {
+  animation-delay: 0.2s;
+}
+
+.healthcare-hero p {
+  animation-delay: 0.34s;
+}
+
+.healthcare-hero-buttons {
+  animation-delay: 0.48s;
+}
+
+@keyframes heroSlideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-26px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .healthcare-badge {
   display: inline-flex;
   align-items: center;
@@ -154,5 +190,16 @@
 
   .healthcare-hero-content {
     margin-top: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .healthcare-badge,
+  .healthcare-hero h1,
+  .healthcare-hero p,
+  .healthcare-hero-buttons {
+    animation: none;
+    opacity: 1;
+    transform: none;
   }
 }

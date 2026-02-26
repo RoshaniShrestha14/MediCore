@@ -18,10 +18,10 @@ const Header: React.FC = () => {
     <header className="header">
       <div className="header-container">
         {/* Logo */}
-        <div className="logo-section">
+        <Link to="/" className="logo-section" onClick={() => setMenuOpen(false)}>
           <img src={logo} alt="MediCore Logo" />
           <span className="logo-text">MediCore</span>
-        </div>
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="nav-desktop">

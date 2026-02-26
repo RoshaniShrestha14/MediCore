@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import { Calendar, Search } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const HealthcareHero: React.FC = () => {
   return (
@@ -26,15 +27,15 @@ const HealthcareHero: React.FC = () => {
         </p>
 
         <div className="healthcare-hero-buttons">
-          <button className="healthcare-primary-btn">
+          <Link to="/appointment" className="healthcare-primary-btn">
             <Calendar size={18} />
             Book Appointment
-          </button>
+          </Link>
 
-          <button className="healthcare-secondary-btn">
+          <Link to="/doctor#doctor-list" className="healthcare-secondary-btn">
             <Search size={18} />
             Find a Specialist
-          </button>
+          </Link>
         </div>
       </div>
     </section>
