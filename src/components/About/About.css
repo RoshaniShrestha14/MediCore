@@ -949,3 +949,78 @@
     font-size: 2rem;
   }
 }
+
+/* 
+@keyframes smoothFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-hero-content,
+.about-hero-stats,
+.history-section,
+.mission-vision,
+.core-values,
+.specialists,
+.about-cta-wrapper {
+  animation: smoothFadeUp 1s ease forwards;
+}
+
+.about-hero-stats {
+  animation-delay: 0.3s;
+}
+
+.mv-card,
+.value-card,
+.specialist-card {
+  transition: all 0.35s ease;
+}
+
+.mv-card:hover,
+.value-card:hover,
+.specialist-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(15, 23, 42, 0.12);
+}
+
+
+.primary-btn,
+.secondary-btn,
+.cta-button,
+.specialists-more-btn {
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover,
+.cta-button:hover,
+.specialists-more-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-hero-content,
+  .about-hero-stats,
+  .history-section,
+  .mission-vision,
+  .core-values,
+  .specialists,
+  .about-cta-wrapper,
+  .mv-card,
+  .value-card,
+  .specialist-card,
+  .primary-btn,
+  .secondary-btn,
+  .cta-button,
+  .specialists-more-btn {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+ */
